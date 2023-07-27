@@ -165,28 +165,7 @@ main > div > div {
 .main-img > img:hover{
     opacity: 0.5;
 }
-/* .avia-arrow{
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    top: -6px;
-    left: 50%;
-    margin-left: -5px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border-width: 1px;
-    border-style: solid;
-    visibility: hidden\9;
-    vertical-align: baseline;
-    text-align: left;
-    display: table;
-    table-layout: fixed;
-    z-index: 5;
-    margin: -5px 0 0 -5px;
-    top: 50%;
-    right: -5px;
-    left: auto;
-} */
+
 .page{
     height: 50px;
     justify-content: flex-end;
