@@ -1,0 +1,460 @@
+*,
+*::after,
+*::before {
+ padding:  0;
+ margin: 0;
+ box-sizing: border-box;
+}
+:root {
+
+}
+
+.container {
+max-width: 1100px !important;
+margin: 0 auto;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+.d-flex {
+display: flex;
+}
+.justify-between{
+justify-content: space-between;
+}
+.align-center{
+align-items: center;
+}
+ul,
+li {
+ list-style: none
+}
+.scrol-up{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.scrol-up:hover{
+    color: #efbb20;
+    background-color: #ffffff;
+}
+.scrol-up > a {
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    font-size: 30px;
+}
+header{
+    height: 80px;
+    padding: 0px 50px;
+}
+header > img {
+   cursor: pointer;
+}
+.twitter{
+   font-size: 20px;
+   border-radius: 50%;
+   padding: 5px;
+   transition: all 0.5s ease-out;
+}
+.dribbble {
+   font-size: 20px;
+   border-radius: 50%;
+   padding: 5px;
+   transition: all 0.5s ease-out;
+}
+.twitter:hover {
+    color: white;
+    background-color: aqua;
+}
+.dribbble:hover {
+   color: white;
+   background-color: crimson;
+}
+.search {
+   display: none;
+}
+.menu {
+   display: none;
+}
+nav {
+    background-color: #333333;
+    color: #e6e6e6;
+    padding: 0px 50px;
+}
+nav div ul li,
+nav div ul a{
+    padding: 10px;
+}
+nav > div > ul > li > a:hover {
+    font: bold;
+    color: white;
+}
+nav > div > div:hover {
+   font: bold;
+   color: white;
+   cursor: pointer;
+}
+.service-li{
+   position: relative;
+}
+.service-ol{
+   position: absolute;
+   background-color: #333333;
+   width: 200%;
+   display: none;
+}
+.service-li:hover ol{
+   display: block;
+}
+.berger-ul{
+    display: none;
+}
+.sort{
+    height: 50px;
+    color: #808080;
+}
+.sort > div{
+    text-align: center;
+    padding-top: 20px;
+}
+.sort > div > a:hover{
+    color: #efbb20;
+}
+main > div{
+    padding: 50px 0;
+    display: grid;
+    grid-template-rows: repeat(6 ,1fr);
+}
+main > div > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.txt-main{
+    border-color: #bebebe;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+.txt-main > div {
+    padding-bottom: 20px;
+}
+.txt-main > p {
+    color: #808080;
+}
+.main-img > img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main-img > img:hover{
+    opacity: 0.5;
+}
+/* .avia-arrow{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-width: 1px;
+    border-style: solid;
+    visibility: hidden\9;
+    vertical-align: baseline;
+    text-align: left;
+    display: table;
+    table-layout: fixed;
+    z-index: 5;
+    margin: -5px 0 0 -5px;
+    top: 50%;
+    right: -5px;
+    left: auto;
+} */
+.page{
+    height: 50px;
+    justify-content: flex-end;
+    color: #808080;
+}
+.page > span {
+    padding-right: 20px;
+}
+
+.end-footer {
+    height: 425px;
+    background-color: #2c353d;
+    color: white;
+}
+.end-footer > section {
+   display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+   padding: 0 20px;
+}
+.end-footer > section > div > h3 {
+   border-style: solid;
+   border-width: 1px;
+   padding: 10px 0;
+   border-left: none;
+   border-right: none;
+   margin-bottom: 15px;
+}
+.end-footer > section > div {
+    padding: 10px 10px;
+}
+.end-footer > section > div > p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.LATEST-PROJECTS > a > img{
+   height: 36px;
+   width: 36px;
+   padding: 3px;
+   background: #454e57;
+   margin-right: 7px;
+   border-color: #ffff;
+   border-style: solid;
+   border-width: 1px;
+}
+.last-projects-p{
+   flex-direction: column;
+}
+.last-projects-p > span:nth-child(1) {
+    font-size: 25px;
+    font: bold;
+}
+.twitter-bottom > a >i {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 2px;
+    background-color: #46d4fe;
+    border-color: #46d4fe;
+    text-shadow: 1px 1px 1px #17ACD8;
+}
+.twitter-bottom:hover span {
+    color: #efbb20;
+}
+.follow-twitter {
+    padding-left: 8px;
+    flex-direction: column;
+}
+.subscribe-bottom > a > i {
+   padding: 5px;
+   height: 30px;
+   width: 30px;
+   color: #fff;
+   text-align: center;
+   font-size: 17px;
+   border-radius: 2px;
+   background-color: #ffa133;
+   border-color: #ffa133;
+   text-shadow: 1px 1px 1px #ffa133;
+}
+.subscribe {
+   padding-left: 8px;
+   flex-direction: column;
+}
+.subscribe-bottom:hover span{
+   color: #ffa133;
+}
+
+footer {
+    height: 55px;
+    background-color: gray;
+    color: white;
+}
+footer > div {
+    padding: 0 20px;
+}
+footer > div > ul {
+    padding-left: 20px;
+}
+footer > div > p > a:hover {
+    color: rgb(239, 187, 32);
+}
+footer > div > ul > li{
+    padding: 15px 25px;
+}
+footer > div > ul > li > a:hover{
+   color: rgb(239, 187, 32);
+}
+
+
+@media (min-width: 800px) and (max-width: 1130px){
+    nav{
+        display: none;
+    }
+    header {
+        border-bottom: 2px solid gray;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .search,
+    .menu{
+        display: block;
+        cursor: pointer;
+        padding: 0 10px;
+    }
+    .twitter-border{
+        padding: 20% 0;
+        border-left: 2px solid gray;
+        overflow: hidden;
+    }
+    input:checked +.berger-ul{
+        transform: translate(-100%, 0%);
+    }
+    .label-berger{
+        z-index: 5;
+    }
+    .berger-ul{
+        display: inline-block;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: 0.9s;
+    }
+    .berger-ul > li:first-child{
+        padding-top: 60px;
+    }
+    .berger-ul > li{
+        width: 180px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        border: 2px solid gray;
+    }
+
+    .end-footer {
+        height: 550px;
+    }
+    footer > div {
+        padding: 10px 20px;
+        align-items: flex-start !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer{
+        height: 90px;
+    }
+    footer > div > ul > li {
+        padding-left: 0px;
+    }
+    footer > div > ul {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        height: 90px;
+        border-bottom: 2px solid gray;
+    }
+    .twitter-border{
+        display: none;
+    }
+    .dribbble{
+        display: none;
+    }
+    .search,
+    .label-berger {
+        font-size: 30px;
+    }
+    nav{
+        display: none;
+    }
+    .search,
+    .menu{
+        display: block;
+        cursor: pointer;
+        padding: 0 10px;
+    }
+    .twitter-border{
+        padding: 20% 0;
+        border-left: 2px solid gray;
+        overflow: hidden;
+    }
+    input:checked +.berger-ul{
+        transform: translate(-100%, 0%);
+    }
+    .label-berger{
+        z-index: 5;
+    }
+    .berger-ul{
+        display: inline-block;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: 0.9s;
+    }
+    .berger-ul > li:first-child{
+        padding-top: 60px;
+    }
+    .berger-ul > li{
+        width: 180px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
+        border: 2px solid gray;
+    }
+    main > div{
+        grid-template-rows: repeat(3 ,1fr);
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    main > div > div {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 ,1fr);
+    }
+    .end-footer {
+        height: 950px;
+    }
+    .end-footer > section {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 0 20px;
+     }
+     .twitter-bottom > a {
+        padding-top: 22px;
+     }
+    footer > div {
+        padding: 10px 20px 0px 20px;
+        align-items: flex-start !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer{
+        height: 105px;
+    }
+    footer > div > ul > li {
+        padding-left: 0px;
+    }
+    footer > div > ul {
+        padding-left: 0px;
+    }
+}
